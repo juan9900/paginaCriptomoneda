@@ -37,13 +37,50 @@ p {
   box-shadow: 0 4px 6px -6px black;
 }
 
+/* PUBLICIDADES */
+.publicidad-horizontal {
+  margin: 40px 0;
+}
+
+.publicidad-vertical {
+  position: absolute;
+  top: 60%;
+  right: 1%;
+  display: none;
+}
+
+.publicidad-tercio img {
+  display: none;
+}
+
+@media only screen and (min-width: 1650px) {
+  .publicidad-vertical {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .publicidad-horizontal img {
+    width: 300px;
+  }
+
+  .publicidad-horizontal {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .publicidad-tercio img {
+    display: block;
+  }
+}
 /* NAVBAR */
 .navbar {
   padding: 10px;
 }
 
 .navbar-brand {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 /* SECCION INICIO */
@@ -172,7 +209,7 @@ h2 {
   max-width: 700px;
   font-weight: 400;
   font-size: 2rem;
-  margin-bottom: 60px;
+  margin-bottom: 3px;
 }
 
 @media only screen and (max-width: 1024px) {
