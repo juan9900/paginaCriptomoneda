@@ -10,15 +10,21 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="resources/css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="sticky navbar navbar-expand-lg navbar-light bg-warning">
-      <div class="container-fluid container">
+    <nav id="navbar" class=" navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="container-fluid container ">
         <a class="navbar-brand" href="#"
           >CRIPTO<span class="fw-bolder">ZONA</span></a
         >
+        <div class="links">
         <button
           class="navbar-toggler"
           type="button"
@@ -36,7 +42,7 @@
               <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#que _son">Que son</a>
+              <a class="nav-link" href="#que_son">Que son</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#populares">Funcionamiento</a>
@@ -56,12 +62,14 @@
             </li>
           </ul>
         </div>
+        
       </div>
     </nav>
 
     <section
       id="inicio"
       class="
+      content
         inicio
         d-flex
         justify-content-center
@@ -72,13 +80,24 @@
     >
       <h1 class="h1">Bienvenido a la criptozona.</h1>
       <p class="h2">
-        Descúbre el fascinante mundo de las cripto monedas, y lo que
+        ¡Descúbre el fascinante mundo de las criptomonedas, y lo que
         representarán </br>para la humanidad en el futuro no muy lejano!
       </p>
+      
     </section>
+     
+    
+    
 
-    <section id="que_son" class="que_son  d-flex container container-fluid flex-column align-items-center">
-      <h2>Qué son las cripto monedas?</h2>
+    <section id="que_son" class="que_son que_son_margin d-flex  flex-column align-items-center">
+      
+      <div class="custom-shape-divider-top-1627581569">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="container container-fluid">
+      <h2>¿Qué son las criptomonedas?</h2>
       <div class="que_son d-flex container container-fluid flex-row 
       align-items-center">
         
@@ -88,23 +107,12 @@
       
         
       </div>
-
-    </section>
-
-    <section id="que_son" class="que_son  d-flex container container-fluid flex-column align-items-center">
-      <h2>Qué son las cripto monedas?</h2>
-      <div class="que_son d-flex container container-fluid flex-row 
-      align-items-center">
-        
-        
-        <img src="resources/img/mano-bitcoin.png" alt="mano con bitcoint">
-        <p>Una criptomoneda, criptodivisa o criptoactivo es un medio digital de intercambio que utiliza criptografía fuerte para asegurar las transacciones, controlar la creación de unidades adicionales y verificar la transferencia de activos usando tecnologías de registro distribuido.​​​​</p>
-      
-        
       </div>
+      
 
     </section>
 
+    
     <footer>
       <div>
         <ul class="footer-links">

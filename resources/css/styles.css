@@ -4,38 +4,28 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 600;
+}
+
 nav a {
   font-size: 1.4em;
 }
 
-.navbar-brand {
-  font-size: 1.6em;
+nav {
+  z-index: 999;
 }
 
-.navbar {
-  padding: 10px;
-}
-
-.que_son img {
-  width: 600px;
-}
-
-.que_son h2 {
-  margin-left: 70px;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.que_son p {
-  font-size: 25px;
-  text-align: center;
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.959);
   box-shadow: 0 1px 2px #efefef;
@@ -43,40 +33,83 @@ nav a {
   box-shadow: 0 4px 6px -6px black;
 }
 
-.inicio {
-  height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/bitcoin-inicio.jpg);
-  background-attachment: scroll, scroll;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
+/* NAVBAR */
+.navbar {
+  padding: 10px;
 }
 
+/* SECCION INICIO */
+.inicio {
+  padding-top: 170px;
+  background-color: #242424;
+  text-align: center;
+  margin-bottom: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.inicio h1 {
+  font-size: 80px;
+}
 @media only screen and (max-width: 480px) {
   .inicio {
     padding: 0px 10px;
   }
 
   .inicio h1 {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
-section {
-  margin-bottom: 18px;
+
+.custom-shape-divider-top-1627581569 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-.row {
-  margin-bottom: 90px;
+.custom-shape-divider-top-1627581569 svg {
+  position: relative;
+  display: block;
+  width: calc(113% + 1.3px);
+  height: 133px;
 }
 
-.card img {
-  width: 150px;
+.custom-shape-divider-top-1627581569 .shape-fill {
+  fill: #242424;
+}
+/* SECCION QUE SON */
+
+.que_son {
+  position: relative;
 }
 
+.que_son img {
+  width: 400px;
+}
+
+.que_son h2 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.que_son p {
+  font-size: 27px;
+  text-align: center;
+  padding-left: 50px;
+}
+
+/* SECCION CONTACTO */
 form div {
   margin-bottom: 15px;
 }
+
+/* SECCION FOOTER */
 footer {
   height: auto;
   background-color: #000;
