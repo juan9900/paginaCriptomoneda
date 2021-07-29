@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3 {
@@ -38,6 +42,10 @@ p {
   padding: 10px;
 }
 
+.navbar-brand {
+  font-size: 40px;
+}
+
 /* SECCION INICIO */
 .inicio {
   padding-top: 170px;
@@ -57,7 +65,12 @@ p {
   }
 
   .inicio h1 {
-    padding-top: 10px;
+    padding-top: 120px;
+    font-size: 4rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
   }
 }
 
@@ -104,31 +117,105 @@ h2 {
   padding-left: 50px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .section-que h2 {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.que-son {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .que-son {
+    flex-direction: column;
+  }
+
+  .que-son p {
+    padding-left: 0;
+  }
+
+  .que-son img {
+    width: 30%;
+  }
+}
+
 /* SECCION COMO SE GUARDAN */
 
 .section-guardan h2 {
   margin-top: 5%;
 }
 
-.como-guardar {
-  position: relative;
-}
-
 .como-guardar img {
   width: 1000px;
   margin-top: 30px;
+  margin-bottom: 9%;
 }
 
 .como-guardar p {
-  position: absolute;
-  top: 18%;
+  /*position: absolute;
+  top: 15%;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  color: #fff;
-  width: 700px;
+  transform: translateX(-50%);*/
+  color: #000;
+  width: 100%;
+  max-width: 700px;
   font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 60px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .como-guardar img {
+    width: 700px;
+  }
+
+  .como-guardar p {
+    width: 70%;
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .como-guardar img {
+    width: 600px;
+  }
+
+  .como-guardar p {
+    width: 70%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .como-guardar p {
+    font-size: 0.2rem;
+    width: 400px;
+
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .como-guardar p {
+    width: 270px;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+  }
+}
+
+/* SECCION POPULARES */
 
 .custom-shape-divider-bottom-1627586837 {
   transform: rotate(180deg);
@@ -152,30 +239,97 @@ h2 {
     height: 92px;
   }
 }
-/* SECCION POPULARES */
-
 .monedas-populares {
   background-color: #242424;
+  padding-bottom: 3%;
 }
+
 .monedas-populares h2 {
-  margin: 2% 0 0 0;
+  margin: 0;
+  padding-top: 1%;
   color: #fff;
 }
+
+.moneda {
+  color: #fff;
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 1090px) {
+  .moneda img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .moneda img {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .moneda img {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .moneda img {
+    width: 100px;
+    margin-bottom: 40px;
+  }
+}
+
 /* SECCION CONTACTO */
+
+.custom-shape-divider-top-1627591897 svg {
+  position: relative;
+  display: block;
+  width: calc(100%);
+  height: 133px;
+}
+
+.custom-shape-divider-top-1627591897 .shape-fill {
+  fill: #242424;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1627591897 svg {
+    width: calc(100% + 1.3px);
+    height: 86px;
+  }
+}
 form div {
   margin-bottom: 15px;
+}
+
+.contacto h2 {
+  margin-top: 0;
+}
+
+.btn-enviar {
+  margin: 20px 0;
+  padding: 15px 40px;
+  font-size: 22px;
+  border-radius: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-enviar {
+    padding: 8px 20px;
+    font-size: 17px;
+  }
 }
 
 /* SECCION FOOTER */
 footer {
   height: auto;
-  background-color: #000;
+  background-color: #242424;
   color: #fff;
   padding: 20px 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 footer ul {
@@ -194,10 +348,6 @@ footer ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-}
-
-footer p {
-  display: block;
 }
 
 @media only screen and (max-width: 500px) {
