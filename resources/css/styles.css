@@ -83,27 +83,84 @@ p {
 }
 /* SECCION QUE SON */
 
-.que_son {
+.section-que {
   position: relative;
 }
 
-.que_son img {
+.section-que img {
   width: 400px;
 }
 
-.que_son h2 {
-  font-size: 60px;
+h2 {
+  font-size: 70px;
   font-weight: bold;
   text-align: center;
   margin-top: 15%;
 }
 
-.que_son p {
-  font-size: 27px;
+.section-que p {
+  font-size: 30px;
   text-align: center;
   padding-left: 50px;
 }
 
+/* SECCION COMO SE GUARDAN */
+
+.section-guardan h2 {
+  margin-top: 5%;
+}
+
+.como-guardar {
+  position: relative;
+}
+
+.como-guardar img {
+  width: 1000px;
+  margin-top: 30px;
+}
+
+.como-guardar p {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #fff;
+  width: 700px;
+  font-weight: 400;
+}
+
+.custom-shape-divider-bottom-1627586837 {
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1627586837 svg {
+  position: relative;
+  display: block;
+  width: calc(113% + 1.3px);
+  height: 133px;
+}
+
+.custom-shape-divider-bottom-1627586837 .shape-fill {
+  fill: #242424;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1627586837 svg {
+    width: calc(100% + 1.3px);
+    height: 92px;
+  }
+}
+/* SECCION POPULARES */
+
+.monedas-populares {
+  background-color: #242424;
+}
+.monedas-populares h2 {
+  margin: 2% 0 0 0;
+  color: #fff;
+}
 /* SECCION CONTACTO */
 form div {
   margin-bottom: 15px;
