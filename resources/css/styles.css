@@ -279,6 +279,7 @@ h2 {
 .monedas-populares {
   background-color: #242424;
   padding-bottom: 3%;
+  margin-top: -5px;
 }
 
 .monedas-populares h2 {
