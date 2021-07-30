@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 h1,
@@ -124,7 +129,7 @@ p {
 .custom-shape-divider-top-1627581569 svg {
   position: relative;
   display: block;
-  width: calc(113% + 1.3px);
+  width: 100%;
   height: 133px;
 }
 
@@ -261,8 +266,9 @@ h2 {
 .custom-shape-divider-bottom-1627586837 svg {
   position: relative;
   display: block;
-  width: calc(113% + 1.3px);
+  width: 100%;
   height: 133px;
+  z-index: -99;
 }
 
 .custom-shape-divider-bottom-1627586837 .shape-fill {
@@ -272,7 +278,7 @@ h2 {
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
   .custom-shape-divider-bottom-1627586837 svg {
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 92px;
   }
 }
