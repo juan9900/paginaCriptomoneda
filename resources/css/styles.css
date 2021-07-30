@@ -302,6 +302,10 @@ h2 {
   margin-top: 2%;
 }
 
+div.moneda.col-sm {
+  margin: 0;
+}
+
 @media only screen and (max-width: 1090px) {
   .moneda img {
     width: 150px;
