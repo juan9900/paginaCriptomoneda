@@ -6,7 +6,6 @@
 
 html,
 body {
-  overflow-x: hidden;
 }
 
 body {
@@ -303,6 +302,7 @@ h2 {
 }
 
 div.moneda.col-sm {
+  padding: 0;
   margin: 0;
 }
 
@@ -320,14 +320,18 @@ div.moneda.col-sm {
 
 @media only screen and (max-width: 600px) {
   .moneda img {
-    width: 200px;
+    width: 190px;
     margin-bottom: 40px;
+  }
+
+  .lista-monedas {
+    margin-top: 30px;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .moneda img {
-    width: 100px;
+    width: 70px;
     margin-bottom: 40px;
   }
 }
