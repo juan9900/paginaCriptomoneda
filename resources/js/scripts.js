@@ -26,3 +26,9 @@ $('a[href*="#"]')
       }
     }
   });
+
+/* Cerrar menu hamburguesa del navbar cuando se presione 
+  un boton */
+$(".navbar-nav>li>a").on("click", function () {
+  $(".navbar-collapse").collapse("hide");
+});
