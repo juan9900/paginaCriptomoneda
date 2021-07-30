@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   position: relative;
 }
@@ -304,6 +299,12 @@ h2 {
 div.moneda.col-sm {
   padding: 0;
   margin: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1090px) {
