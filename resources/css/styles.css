@@ -45,8 +45,8 @@ p {
 
 .publicidad-vertical {
   position: absolute;
-  top: 60%;
-  right: 1%;
+  top: 20%;
+  right: 2%;
   display: none;
 }
 
@@ -54,7 +54,7 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 1650px) {
+@media only screen and (min-width: 1690px) {
   .publicidad-vertical {
     display: block;
   }
@@ -332,7 +332,7 @@ div.moneda.col-sm {
 
 @media only screen and (max-width: 400px) {
   .moneda img {
-    width: 200px;
+    width: 200q px;
     margin-bottom: 40px;
   }
 }
